@@ -1,108 +1,108 @@
-#CÓïÑÔÅäÖÃÎÄ¼ş½âÎö¿â¡ª¡ªiniparser
-**Ç°ÑÔ£º**ÔÚ¶ÔÏîÄ¿µÄÓÅ»¯Ê±£¬·¢ÏÖLinuxÏÂÃ»ÓĞ×¨ÃÅµÄ¹©¸øCÓïÑÔÊ¹ÓÃµÄÅäÖÃÎÄ¼şº¯Êı£¬ÓÚÊÇËÑË÷µ½ÁËiniparser¿â£¬¿ÉÒÔÏñÄÇĞ©ÃæÏò¶ÔÏóÓïÑÔÒ»Ñù£¬Ê¹ÓÃiniÎÄ¼ş½øĞĞ²ÎÊıÅäÖÃ¡£
+# Cè¯­è¨€é…ç½®æ–‡ä»¶è§£æåº“â€”â€”iniparser
+**å‰è¨€ï¼š**åœ¨å¯¹é¡¹ç›®çš„ä¼˜åŒ–æ—¶ï¼Œå‘ç°Linuxä¸‹æ²¡æœ‰ä¸“é—¨çš„ä¾›ç»™Cè¯­è¨€ä½¿ç”¨çš„é…ç½®æ–‡ä»¶å‡½æ•°ï¼Œäºæ˜¯æœç´¢åˆ°äº†iniparseråº“ï¼Œå¯ä»¥åƒé‚£äº›é¢å‘å¯¹è±¡è¯­è¨€ä¸€æ ·ï¼Œä½¿ç”¨iniæ–‡ä»¶è¿›è¡Œå‚æ•°é…ç½®ã€‚
 
-##½éÉÜ
-iniparserÊÇÕë¶ÔINIÎÄ¼şµÄ½âÎöÆ÷¡£iniÎÄ¼şÔòÊÇÒ»Ğ©ÏµÍ³»òÕßÈí¼şµÄÅäÖÃÎÄ¼ş¡£
+## ä»‹ç»
+iniparseræ˜¯é’ˆå¯¹INIæ–‡ä»¶çš„è§£æå™¨ã€‚iniæ–‡ä»¶åˆ™æ˜¯ä¸€äº›ç³»ç»Ÿæˆ–è€…è½¯ä»¶çš„é…ç½®æ–‡ä»¶ã€‚
 
-iniparser¿âÓĞÈıÖÖÏÂÔØ·½Ê½£º
-1. [¹Ù·½ÍøÕ¾](http://ndevilla.free.fr/iniparser)
-2. [ÎÒµÄgithub](https://github.com/AnSwErYWJ/Iniparser/blob/master/iniparser-3.1.tar.gz)
-3. [ÎÒµÄÍøÅÌ](http://pan.baidu.com/s/1jGEn86U)
+iniparseråº“æœ‰ä¸‰ç§ä¸‹è½½æ–¹å¼ï¼š
+1. [å®˜æ–¹ç½‘ç«™](http://ndevilla.free.fr/iniparser)
+2. [æˆ‘çš„github](https://github.com/AnSwErYWJ/Iniparser/blob/master/iniparser-3.1.tar.gz)
+3. [æˆ‘çš„ç½‘ç›˜](http://pan.baidu.com/s/1jGEn86U)
 4. [source code tree](https://github.com/ndevilla/iniparser)
 
-##»ù±¾Óï·¨
-Iniparser¿âµÄAPI¿ÉÒÔ¶ÔiniÎÄ¼ş£¨ÅäÖÃÎÄ¼ş£©½øĞĞ½âÎö¡¢ÉèÖÃ¡¢É¾³ıµÈ²Ù×÷¡£
+## åŸºæœ¬è¯­æ³•
+Iniparseråº“çš„APIå¯ä»¥å¯¹iniæ–‡ä»¶ï¼ˆé…ç½®æ–‡ä»¶ï¼‰è¿›è¡Œè§£æã€è®¾ç½®ã€åˆ é™¤ç­‰æ“ä½œã€‚
 
-iniÎÄ¼şµÄ×î»ù±¾×é³Éµ¥Ôª¾ÍÊÇkey»òÕß½Ğproperty£¬Ã¿¸ökey¶¼ÓĞÒ»¸öÃû³Æ(name)ºÍ¶ÔÓ¦µÄÖµ(value)£º
+iniæ–‡ä»¶çš„æœ€åŸºæœ¬ç»„æˆå•å…ƒå°±æ˜¯keyæˆ–è€…å«propertyï¼Œæ¯ä¸ªkeyéƒ½æœ‰ä¸€ä¸ªåç§°(name)å’Œå¯¹åº”çš„å€¼(value)ï¼š
 ```
 name=value 
 ```
 
-¶øĞí¶à¸öKey¿ÉÒÔ±»¹éÀàÎªÒ»×é£¬¼´section¡£×éÃû¶¨ÒåÒª¶ÀÁ¢Ò»ĞĞ£¬²¢ÓÃÖĞÀ¨ºÅÀ¨ÆğÀ´£º
+è€Œè®¸å¤šä¸ªKeyå¯ä»¥è¢«å½’ç±»ä¸ºä¸€ç»„ï¼Œå³sectionã€‚ç»„åå®šä¹‰è¦ç‹¬ç«‹ä¸€è¡Œï¼Œå¹¶ç”¨ä¸­æ‹¬å·æ‹¬èµ·æ¥ï¼š
 ```
 [section]
 name=value
 ```
 
-ÔÚsectionÉùÃ÷ÏÂµÄkeys¶¼»áºÍ¸Ãsection¹ØÁªÆğÀ´¡£Ò»¸ösectionµÄ×÷ÓÃÓò»áÔÚÏÂÒ»¸ösectionÉùÃ÷µÄµØ·½½áÊø£¬Èç¹ûÃ»ÓĞÏÂÒ»¸ösectionµÄÉùÃ÷£¬ÄÇÃ´¸ÃsectionµÄ½áÊøµØ·½¾ÍÊÇ¸ÃÎÄ¼şÄ©Î²¡£sectionÊÇ²»¿ÉÒÔÇ¶Ì×µÄ¡£
+åœ¨sectionå£°æ˜ä¸‹çš„keyséƒ½ä¼šå’Œè¯¥sectionå…³è”èµ·æ¥ã€‚ä¸€ä¸ªsectionçš„ä½œç”¨åŸŸä¼šåœ¨ä¸‹ä¸€ä¸ªsectionå£°æ˜çš„åœ°æ–¹ç»“æŸï¼Œå¦‚æœæ²¡æœ‰ä¸‹ä¸€ä¸ªsectionçš„å£°æ˜ï¼Œé‚£ä¹ˆè¯¥sectionçš„ç»“æŸåœ°æ–¹å°±æ˜¯è¯¥æ–‡ä»¶æœ«å°¾ã€‚sectionæ˜¯ä¸å¯ä»¥åµŒå¥—çš„ã€‚
 
-¶¨Î»Ò»¸ökeyÊÇÓÃsection:keyÀ´±íÊ¾µÄ£¬ËùÒÔ²»Í¬sectionÏÂµÄkeyµÄÃû³ÆÊÇ¿ÉÒÔÏàÍ¬µÄ¡£
+å®šä½ä¸€ä¸ªkeyæ˜¯ç”¨section:keyæ¥è¡¨ç¤ºçš„ï¼Œæ‰€ä»¥ä¸åŒsectionä¸‹çš„keyçš„åç§°æ˜¯å¯ä»¥ç›¸åŒçš„ã€‚
 
-iniparser¿â´¦ÀíÃû³ÆµÄÊ±ºò£¬»áÍ³Ò»»»³ÉĞ¡Ğ´£¬ËùÒÔsectionºÍpropertyµÄÃû³ÆÃüÃûÊÇ´óĞ¡Ğ´ÎŞ¹ØµÄ¡£
+iniparseråº“å¤„ç†åç§°çš„æ—¶å€™ï¼Œä¼šç»Ÿä¸€æ¢æˆå°å†™ï¼Œæ‰€ä»¥sectionå’Œpropertyçš„åç§°å‘½åæ˜¯å¤§å°å†™æ— å…³çš„ã€‚
 
-×¢ÊÍÒªÒÔ·ÖºÅ¿ªÍ·£º
+æ³¨é‡Šè¦ä»¥åˆ†å·å¼€å¤´ï¼š
 ```C
  ;comment
 ```
 
-##API
-iniparser.h£º
+## API
+iniparser.hï¼š
 ```
-int iniparser_getnsec(dictionary * d);	//»ñÈ¡dictionary¶ÔÏóµÄsection¸öÊı
+int iniparser_getnsec(dictionary * d);	//è·å–dictionaryå¯¹è±¡çš„sectionä¸ªæ•°
 
-char * iniparser_getsecname(dictionary * d, int n);	//»ñÈ¡dictionary¶ÔÏóµÄµÚn¸ösectionµÄÃû×Ö
+char * iniparser_getsecname(dictionary * d, int n);	//è·å–dictionaryå¯¹è±¡çš„ç¬¬nä¸ªsectionçš„åå­—
 
-void iniparser_dump_ini(dictionary * d, FILE * f);	//±£´ædictionary¶ÔÏóµ½file
+void iniparser_dump_ini(dictionary * d, FILE * f);	//ä¿å­˜dictionaryå¯¹è±¡åˆ°file
 
-void iniparser_dumpsection_ini(dictionary * d, char * s, FILE * f);	//±£´ædictionary¶ÔÏóÒ»¸ösectionµ½file
+void iniparser_dumpsection_ini(dictionary * d, char * s, FILE * f);	//ä¿å­˜dictionaryå¯¹è±¡ä¸€ä¸ªsectionåˆ°file
 
-void iniparser_dump(dictionary * d, FILE * f);	//±£´ædictionary¶ÔÏóµ½file
+void iniparser_dump(dictionary * d, FILE * f);	//ä¿å­˜dictionaryå¯¹è±¡åˆ°file
 
-int iniparser_getsecnkeys(dictionary * d, char * s);	//»ñÈ¡dictionary¶ÔÏóÄ³¸ösectionÏÂµÄkey¸öÊı
+int iniparser_getsecnkeys(dictionary * d, char * s);	//è·å–dictionaryå¯¹è±¡æŸä¸ªsectionä¸‹çš„keyä¸ªæ•°
 
-char ** iniparser_getseckeys(dictionary * d, char * s);	//»ñÈ¡dictionary¶ÔÏóÄ³¸ösectionÏÂËùÓĞµÄkey
+char ** iniparser_getseckeys(dictionary * d, char * s);	//è·å–dictionaryå¯¹è±¡æŸä¸ªsectionä¸‹æ‰€æœ‰çš„key
 
-char * iniparser_getstring(dictionary * d, const char * key, char * def);	//·µ»Ødictionary¶ÔÏóµÄsection:key¶ÔÓ¦µÄ×Ö´®Öµ
+char * iniparser_getstring(dictionary * d, const char * key, char * def);	//è¿”å›dictionaryå¯¹è±¡çš„section:keyå¯¹åº”çš„å­—ä¸²å€¼
 
-int iniparser_getint(dictionary * d, const char * key, int notfound);	//·µ»Øidictionary¶ÔÏóµÄsection:key¶ÔÓ¦µÄÕûĞÎÖµ
+int iniparser_getint(dictionary * d, const char * key, int notfound);	//è¿”å›idictionaryå¯¹è±¡çš„section:keyå¯¹åº”çš„æ•´å½¢å€¼
 
-double iniparser_getdouble(dictionary * d, const char * key, double notfound);	//·µ»Ødictionary¶ÔÏóµÄsection:key¶ÔÓ¦µÄË«¸¡µãÖµ
+double iniparser_getdouble(dictionary * d, const char * key, double notfound);	//è¿”å›dictionaryå¯¹è±¡çš„section:keyå¯¹åº”çš„åŒæµ®ç‚¹å€¼
 
-int iniparser_getboolean(dictionary * d, const char * key, int notfound);	//·µ»Ødictionary¶ÔÏóµÄsection:key¶ÔÓ¦µÄ²¼¶ûÖµ
+int iniparser_getboolean(dictionary * d, const char * key, int notfound);	//è¿”å›dictionaryå¯¹è±¡çš„section:keyå¯¹åº”çš„å¸ƒå°”å€¼
 
-int iniparser_set(dictionary * ini, const char * entry, const char * val);	//ÉèÖÃdictionary¶ÔÏóµÄÄ³¸ösection:keyµÄÖµ
+int iniparser_set(dictionary * ini, const char * entry, const char * val);	//è®¾ç½®dictionaryå¯¹è±¡çš„æŸä¸ªsection:keyçš„å€¼
 
-void iniparser_unset(dictionary * ini, const char * entry);	//É¾³ıdictionary¶ÔÏóÖĞÄ³¸ösection:key
+void iniparser_unset(dictionary * ini, const char * entry);	//åˆ é™¤dictionaryå¯¹è±¡ä¸­æŸä¸ªsection:key
 
-int iniparser_find_entry(dictionary * ini, const char * entry) ;	//ÅĞ¶Ïdictionary¶ÔÏóÖĞÊÇ·ñ´æÔÚÄ³¸ösection:key
+int iniparser_find_entry(dictionary * ini, const char * entry) ;	//åˆ¤æ–­dictionaryå¯¹è±¡ä¸­æ˜¯å¦å­˜åœ¨æŸä¸ªsection:key
 
-dictionary * iniparser_load(const char * ininame);	//½âÎödictionary¶ÔÏó²¢·µ»Ø(·ÖÅäÄÚ´æ)dictionary¶ÔÏó
+dictionary * iniparser_load(const char * ininame);	//è§£ædictionaryå¯¹è±¡å¹¶è¿”å›(åˆ†é…å†…å­˜)dictionaryå¯¹è±¡
 
-void iniparser_freedict(dictionary * d);	//ÊÍ·Ådictionary¶ÔÏó(ÄÚ´æ)
+void iniparser_freedict(dictionary * d);	//é‡Šæ”¾dictionaryå¯¹è±¡(å†…å­˜)
 
-unsigned dictionary_hash(const char * key);	//¼ÆËã¹Ø¼ü´ÊµÄhashÖµ
+unsigned dictionary_hash(const char * key);	//è®¡ç®—å…³é”®è¯çš„hashå€¼
 
-dictionary * dictionary_new(int size);	//´´½¨dictionary¶ÔÏó
+dictionary * dictionary_new(int size);	//åˆ›å»ºdictionaryå¯¹è±¡
 
-void dictionary_del(dictionary * vd);	//É¾³ıdictionary¶ÔÏó
+void dictionary_del(dictionary * vd);	//åˆ é™¤dictionaryå¯¹è±¡
 
-char * dictionary_get(dictionary * d, const char * key, char * def);	//»ñÈ¡dictionary¶ÔÏóµÄkeyÖµ
+char * dictionary_get(dictionary * d, const char * key, char * def);	//è·å–dictionaryå¯¹è±¡çš„keyå€¼
 
-int dictionary_set(dictionary * vd, const char * key, const char * val);	//ÉèÖÃdictionary¶ÔÏóµÄkeyÖµ
+int dictionary_set(dictionary * vd, const char * key, const char * val);	//è®¾ç½®dictionaryå¯¹è±¡çš„keyå€¼
 
-void dictionary_unset(dictionary * d, const char * key);	//É¾³ıdictionary¶ÔÏóµÄkeyÖµ
+void dictionary_unset(dictionary * d, const char * key);	//åˆ é™¤dictionaryå¯¹è±¡çš„keyå€¼
 
-void dictionary_dump(dictionary * d, FILE * out);	//±£´ædictionary¶ÔÏó
+void dictionary_dump(dictionary * d, FILE * out);	//ä¿å­˜dictionaryå¯¹è±¡
 ```
 
-##Ê¾Àı
+## ç¤ºä¾‹
 
-Ê×ÏÈ½âÑ¹ÄãÏÂÔØµÄ¿âÎÄ¼ş£º
+é¦–å…ˆè§£å‹ä½ ä¸‹è½½çš„åº“æ–‡ä»¶ï¼š
 ```
 tar -zxvf iniparser-3.1.tar.gz
 ```
 
-±àÒë£º
+ç¼–è¯‘ï¼š
 ```
 cd iniparser-3.1/
 make
 ```
 
-¿ÉÒÔ¿´µ½srcÄ¿Â¼ÏÂÉú³ÉÁËÁù¸öÎÄ¼ş£¬ÆäÖĞdictionary.hÀïÃæÉùÃ÷ÁËÒ»Ğ©Ö±½Ó½âÎöini fileµÄAPI£¬iniparser.hÀïÃæÉùÃ÷ÁËÒ»Ğ©Ìá¹©ÓÃ»§²Ù×÷µÄAPI¡£iniparser.hÀïÃæµÄAPIÊÇ¶Ôdictionary.hÀïÃæAPIµÄÔÙ´Î·â×°£¬ÒÔÌá¹©ÓÃ»§ÓÑºÃĞÔ¡£
+å¯ä»¥çœ‹åˆ°srcç›®å½•ä¸‹ç”Ÿæˆäº†å…­ä¸ªæ–‡ä»¶ï¼Œå…¶ä¸­dictionary.hé‡Œé¢å£°æ˜äº†ä¸€äº›ç›´æ¥è§£æini fileçš„APIï¼Œiniparser.hé‡Œé¢å£°æ˜äº†ä¸€äº›æä¾›ç”¨æˆ·æ“ä½œçš„APIã€‚iniparser.hé‡Œé¢çš„APIæ˜¯å¯¹dictionary.hé‡Œé¢APIçš„å†æ¬¡å°è£…ï¼Œä»¥æä¾›ç”¨æˆ·å‹å¥½æ€§ã€‚
 
-È»ºó¿½±´srcÏÂµÄÍ·ÎÄ¼şdictionary.hºÍiniparser.hÒÔ¼°Ñ¹Ëõ°üÄ¿Â¼ÏÂµÄ¾²Ì¬¿âlibiniparser.aºÍ¶¯Ì¬¿âlibiniparser.so.0µ½Ä¿±êÎÄ¼şÏµÍ³µÄ¶ÔÓ¦Ä¿Â¼ÏÂ¡£
+ç„¶åæ‹·è´srcä¸‹çš„å¤´æ–‡ä»¶dictionary.hå’Œiniparser.hä»¥åŠå‹ç¼©åŒ…ç›®å½•ä¸‹çš„é™æ€åº“libiniparser.aå’ŒåŠ¨æ€åº“libiniparser.so.0åˆ°ç›®æ ‡æ–‡ä»¶ç³»ç»Ÿçš„å¯¹åº”ç›®å½•ä¸‹ã€‚
 
-±àĞ´iniÎÄ¼ş£º
+ç¼–å†™iniæ–‡ä»¶ï¼š
 ```
 #ini file for example
 
@@ -119,13 +119,13 @@ family = AF_INET;
 speed = 9600;
 ```
 
-²âÊÔÎÄ¼ş£º
+æµ‹è¯•æ–‡ä»¶ï¼š
 ```
 /*************************************************************************
 	> File Name: example.c
 	> Author: AnSwEr
 	> Mail: 1045837697@qq.com
-	> Created Time: 2015Äê10ÔÂ22ÈÕ ĞÇÆÚËÄ 20Ê±37·Ö10Ãë
+	> Created Time: 2015å¹´10æœˆ22æ—¥ æ˜ŸæœŸå›› 20æ—¶37åˆ†10ç§’
  ************************************************************************/
 
 #include <stdio.h>
@@ -168,13 +168,13 @@ int main(void)
 }
 ```
 
-ÔËĞĞ£º
+è¿è¡Œï¼š
 ```
 gcc example.c -o example -L. -liniparser
 ./example
 ```
 
-½á¹û£º
+ç»“æœï¼š
 ```
 dictionary obj:
 [tcp]=UNDEF
@@ -194,14 +194,14 @@ speed : 9600
 
 ```
 
-##×Ü½á
-Õâ¸ö¿â¶ÔÅäÖÃÎÄ¼şµÄ¹ÜÀí»¹ÊÇºÜ·½±ãµÄ£¬Ï£Íû¶ÔÄúÓĞ°ïÖú¡£
+## æ€»ç»“
+è¿™ä¸ªåº“å¯¹é…ç½®æ–‡ä»¶çš„ç®¡ç†è¿˜æ˜¯å¾ˆæ–¹ä¾¿çš„ï¼Œå¸Œæœ›å¯¹æ‚¨æœ‰å¸®åŠ©ã€‚
 
 
-## ·´À¡Óë½¨Òé
-- Î¢²©£º[@AnSwEr²»ÊÇ´ğ°¸](http://weibo.com/1783591593)
-- github£º[AnSwErYWJ](https://github.com/AnSwErYWJ)
-- ²©¿Í£º[AnSwEr²»ÊÇ´ğ°¸µÄ×¨À¸](http://blog.csdn.net/u011192270)
+## åé¦ˆä¸å»ºè®®
+- å¾®åšï¼š[@AnSwErä¸æ˜¯ç­”æ¡ˆ](http://weibo.com/1783591593)
+- githubï¼š[AnSwErYWJ](https://github.com/AnSwErYWJ)
+- åšå®¢ï¼š[AnSwErä¸æ˜¯ç­”æ¡ˆçš„ä¸“æ ](http://blog.csdn.net/u011192270)
 
 
 
