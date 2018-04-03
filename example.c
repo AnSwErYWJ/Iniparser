@@ -25,6 +25,8 @@ int main(void)
     printf("dictionary obj:\n");
     iniparser_dump(ini,stderr);//save ini to stderr
 
+    printf("number of keys in %s is %d\n", "tcp", iniparser_getsecnkeys(ini, "tcp"));
+    
     printf("\n%s:\n",iniparser_getsecname(ini,0));//get section name
     n = iniparser_getint(ini,"tcp:port",-1);
     printf("port : %d\n",n);
